@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayCatHeart(); // Display the cat-heart.gif
+            displaymocha2(); // Display the mocha2.gif
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -47,16 +47,16 @@ function displayCat() {
     // Create a new Image element for the cat
     var catImage = new Image();
     // Set the source (file path) for the cat image
-    catImage.src = 'mocha.gif'; // Assuming the cat image is named "cat.gif"
+    Image.src = 'mocha.gif'; // Assuming the cat image is named "mocha.gif"
     // Set alternative text for the image (for accessibility)
-    catImage.alt = 'mocha';
-    // When the cat image is fully loaded, add it to the image container
-    catImage.onload = function() {
-        imageContainer.appendChild(catImage);
+    Image.alt = 'mocha';
+    // When the mocha image is fully loaded, add it to the image container
+    Image.onload = function() {
+        imageContainer.appendChild(Image);
     };
 }
 
-// Function to display the cat-heart.gif
+// Function to display the mocha2.gif
 function displayCatHeart() {
     // Clear existing content in the image container
     document.getElementById('image-container').innerHTML = '';
@@ -65,16 +65,16 @@ function displayCatHeart() {
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
     // Set the source (file path) for the cat-heart image
-    catHeartImage.src = 'mocha2.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
+    mocha2Image.src = 'mocha2.gif'; // Assuming the cat-heart image is named "mocha2.gif"
     // Set alternative text for the image (for accessibility)
-    catHeartImage.alt = 'Cat Heart';
-    // When the cat-heart image is fully loaded, add it to the image container
-    catHeartImage.onload = function() {
-        imageContainer.appendChild(catHeartImage);
+    mocha2Image.alt = 'mocha2';
+    // When the mocha2 image is fully loaded, add it to the image container
+    mocha2Image.onload = function() {
+        imageContainer.appendChild(mocha2Image);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
     };
 }
 
 // Display the mocha.gif initially
-displayCat();
+displaymocha();
